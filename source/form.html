@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <header class="header page__header">
+    <a class="header__logo" href="#">
+      <img class="header__logo-pic" src="#" width="" height="" alt="Логотип Кэт энерджи">
+    </a>
+    <button class="header__toggle toggle header__toggle--active" type="button" aria-label="открыть меню"></button>
+    </nav>
+  </header>
+  <main class="page__main main">
+    <h1 class="main__title">Подбор программы</h1>
+    <h2 class="main__text">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
+    <form class="main__form form" action="https://echo.htmlacademy.ru/" method="post">
+      <label class=" form__label" for="user-name">Имя:*
+        <input class="form__name" type="text" placeholder="БАРСИК" name="user-name" id="user-name" required>
+      </label>
+      <label class=" form__label" for="user-weight">Вес (кг):*
+        <input class="form__name" type="text" placeholder="7" name="user-weight" id="user-weight" required>
+      </label>
+      <label class=" form__label" for="user-years">Возраст (лет):
+      </label>
+      <fieldset class="form__radio-button radio-button">
+        <label>
+          <input class="radio-button__radio" type="radio" name="goal" value="slim" checked>Похудение
+        </label>
+        <label>
+          <input class="radio-button__radio" type="radio" name="goal" value="fat">Набор массы
+        </label>
+        <label>
+          <input class="radio-button__radio" type="radio" name="goal" value="don't-know">Не знаю (Нужен ваш совет)
+        </label>
+      </fieldset>
+      <div class="form__contacts contacts">
+        <h2 class="contacts__text">Контактные данные (владельца кота)</h2>
+        <label class="contacts__label" for="user-name">E-mail:*
+          <input class="contacts__e-mail" type="email" name="user-name" id="user-name" required>
+        </label>
+        <label class="contacts__phone" for="user-phone">Телефон:*
+          <input class="contacts__e-mail" type="tel" name="user-phone" id="user-phone" required>
+        </label>
+      </div>
+      <div class="form__comments comment">
+        <h2 class="comment__title">Комментарий</h2>
+        <label class="comment__label" for="comment-text">Имя:*
+          <input class="comment__text" type="text" placeholder="Расскажите обо всех повАдках кота" name="comment-text" id="comment-text">
+        </label>
+      </div>
+      <fieldset class="form__additionally additionally">
+        <legend class="additionally__title">Дополнительно:</legend>
+        <label class="additionally__label">
+          <input class="" type="checkbox" name="" checked>
+          <span class="control-mark checkbox-button"></span>
+          <span class="control-label">Сахарозаменитель</span>
+        </label>
+        <label class="control catalog-filter-item">
+          <input class="control control-input visually-hidden" type="checkbox" name="parking">
+          <span class="control-mark checkbox-button"></span>
+          <span class="control-label">Питьевая вода</span>
+        </label>
+        <label class="control catalog-filter-item">
+          <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+          <span class="control-mark checkbox-button"></span>
+          <span class="control-label">Молоко</span>
+        </label>
+        <label class="control catalog-filter-item">
+          <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+          <span class="control-mark checkbox-button"></span>
+          <span class="control-label">Витамины</span>
+        </label>
+      </fieldset>
+      <button class="form__buton" type="button" aria-label="Отправить заявку">Отправить заявку</button>
+    <span class="form__required">* — Обязательные поля</span>
+    </form>
+    <div class="location">
+      <strong class="location__invite">Приглашаем к сотрудничеству дилеров!</strong>
+      <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <iframe class="location__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52374.281340783986!2d-111.82792624587917!3d34.87148688958284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1662244484725!5m2!1sru!2sru"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Расположение магазина"></iframe>
+    </div>
+  </main>
+  <footer class="footer">
+    <h2 class="footer__name">Cat Energy</h2>
+    <section class="footer__social social">
+      <ul class="social__list">
+        <li social__item>
+          <a class="social__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li social__item>
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+        <li social__item>
+          <a class="social__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="copyright">
+      <h3 class="copyright__title">HTML Academy</h3>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">«Html Academy»</span>
+      </a>
+      </div>
+  </footer>
+
+</body>
+
+</html>
