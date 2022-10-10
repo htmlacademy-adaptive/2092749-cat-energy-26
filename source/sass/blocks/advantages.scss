@@ -1,0 +1,59 @@
+.advantages {
+  background-color: #F2F2F2;
+  padding: 20px;
+
+  @include tablet {
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-left: 53px;
+  }
+}
+
+.advantages__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+}
+
+.advantages__discription {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+
+  @include tablet {
+    padding-right: 308px;
+    margin-bottom: 48px;
+  }
+}
+
+.advantages__catalog {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @include tablet{
+    font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

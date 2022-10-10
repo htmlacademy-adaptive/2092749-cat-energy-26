@@ -1,0 +1,72 @@
+.card{
+margin-bottom: 15px;
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  border: 1px solid #EBEBEB;
+  width: 320px;
+  right: 0;
+}
+
+.card__wraper{
+  display: flex;
+  margin-bottom: 22px;
+  padding-top: 21px;
+}
+.card__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  margin: 0;
+  grid-column: 1/2;
+}
+
+.card__container{
+  display: grid;
+  grid-template-columns: 76px 66px;
+}
+
+.card__mass {
+  @include font;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.card__weight {
+  @include font;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.card__taste {
+  @include font;
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.card__name {
+  @include font;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.card__price{
+  @include font;
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.card__sum{
+  @include font;
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+// .card__button{
+//   margin-bottom: 14px;
+// }

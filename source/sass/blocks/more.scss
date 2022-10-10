@@ -1,0 +1,50 @@
+.more__title {
+  margin: 0;
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.more__product {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.more__price {
+  font-family: 'Arial';
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+}
+
+.more__weight {
+  font-family: 'Arial';
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+}
+
+.more__div{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.more__card{
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid #CDCDCD;
+}
+
+.more__card:last-child{
+  border-bottom: 1px solid #CDCDCD;
+}

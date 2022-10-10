@@ -1,0 +1,97 @@
+.presentation {
+  background-image: url("../img/index-background-desktop.jpg");
+  background-repeat: no-repeat;
+  height: 302px;
+  position: relative;
+  background-color: rgba(104, 183, 56, 0.85);
+
+  @include tablet {
+    background-image: none;
+  }
+}
+
+.presentation::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(104, 183, 56, 0.85);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  @include tablet {
+    background-color: #FFFFFF;
+  }
+}
+
+.presentation__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  padding-top: 27px;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    padding-top: 62px;
+    padding-left: 117px;
+    padding-right: 196px;
+    margin-bottom: 41px;
+    text-align: initial;
+  }
+}
+
+.presentation__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  margin-top: 25px;
+  position: relative;
+  z-index: 1;
+
+  @include tablet {
+    font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 100px;
+  }
+}
+
+.presentation::after {
+  position: absolute;
+  background-image: url("../img/index-can.png");
+  content: "";
+  height: 270px;
+  width: 280px;
+  left: 20px;
+  top: 160px;
+  z-index: 2;
+
+  @include tablet{
+    background-image: url("../img/index-can-tablet.jpg");
+    // height: 609px;
+    // width: 709px;
+  }
+}
+

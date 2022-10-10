@@ -10,3 +10,13 @@
     @content;
   }
 }
+
+@mixin font {
+  font-family: 'Arial';
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+
+

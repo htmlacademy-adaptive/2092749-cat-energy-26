@@ -1,0 +1,16 @@
+.page{
+  max-width: 320px;
+  @include tablet {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.page__body{
+  margin: 0;
+}

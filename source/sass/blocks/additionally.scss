@@ -1,0 +1,59 @@
+.additionally {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 0;
+  // position: relative;
+}
+
+.additionally__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 34px;
+}
+
+.additionally__control-mark {
+  position: absolute;
+  left: 1px;
+  top: -7px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+}
+
+.additionally__control-label {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 48px;
+}
+
+.additionally__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.additionally__label:last-child {
+  margin-bottom: 34px;
+}
+
+.additionally__label {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.additionally__input:checked + .additionally__control-mark::before{
+  position: absolute;
+  content: url(../img/checkbox-arrow.svg);
+  bottom: 1px;
+  left: 4px;
+}
+
+.form__button{
+  margin-bottom: 28px;
+}

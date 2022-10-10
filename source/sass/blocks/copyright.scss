@@ -1,0 +1,27 @@
+.copyright__title {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  padding-left: 19px;
+  margin: 0;
+}
+
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.copyright__link {
+  padding-top: 28px;
+  padding-bottom: 32px;
+  padding-right: 20px;
+
+  @include tablet{
+    padding: 0;
+  }
+}
