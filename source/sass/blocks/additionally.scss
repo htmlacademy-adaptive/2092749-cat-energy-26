@@ -3,7 +3,10 @@
   flex-direction: column;
   border: none;
   margin: 0;
-  // position: relative;
+
+  @include tablet{
+   display: block;
+  }
 }
 
 .additionally__title {
@@ -13,6 +16,12 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 34px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+  }
 }
 
 .additionally__control-mark {
@@ -47,13 +56,19 @@
   margin-bottom: 15px;
 }
 
-.additionally__input:checked + .additionally__control-mark::before{
+.additionally__label:nth-child(2n+1){
+  @include tablet{
+    padding-right: 123px;
+  }
+}
+
+.additionally__input:checked+.additionally__control-mark::before {
   position: absolute;
   content: url(../img/checkbox-arrow.svg);
   bottom: 1px;
   left: 4px;
 }
 
-.form__button{
+.form__button {
   margin-bottom: 28px;
 }

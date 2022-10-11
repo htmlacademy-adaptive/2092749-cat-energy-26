@@ -1,3 +1,9 @@
+.main-form {
+  @include tablet {
+    padding: 65px 66px 72px 70px;
+  }
+}
+
 .main-form__title {
   font-family: "oswaldregular", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -6,6 +12,12 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 39px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .main-form__text {
@@ -17,4 +29,10 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

@@ -1,3 +1,10 @@
+.contacts {
+  @include tablet {
+    padding-top: 71px;
+    padding-bottom: 65px;
+  }
+}
+
 .contacts__text {
   font-family: "oswaldregular", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -7,6 +14,12 @@
   margin: 0;
   position: relative;
   margin-bottom: 35px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .contacts__text::before {
@@ -23,10 +36,25 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__input {
   border: 1px solid #CDCDCD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__e-mail {
@@ -34,14 +62,24 @@
   width: 219px;
 }
 
-.contacts__input--e-mail{
+.contacts__input--e-mail {
   width: 219px;
   margin-bottom: 14px;
   margin-left: 4px;
+
+  @include tablet{
+    width: 551px;
+    margin-left: 10px;
+  }
 }
 
-.contacts__input--phone{
+.contacts__input--phone {
   width: 204px;
   margin-bottom: 24px;
   margin-left: 1px;
+
+  @include tablet{
+    width: 535px;
+    margin-left: 3px;
+  }
 }

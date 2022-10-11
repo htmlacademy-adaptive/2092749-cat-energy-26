@@ -7,6 +7,8 @@
 
   @include tablet {
     background-image: none;
+    padding-left: 117px;
+    padding-right: 196px;
   }
 }
 
@@ -46,8 +48,6 @@
     line-height: 60px;
     color: #000000;
     padding-top: 62px;
-    padding-left: 117px;
-    padding-right: 196px;
     margin-bottom: 41px;
     text-align: initial;
   }
@@ -74,7 +74,7 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #000000;
-    margin-bottom: 100px;
+    text-align: initial;
   }
 }
 
@@ -90,8 +90,9 @@
 
   @include tablet{
     background-image: url("../img/index-can-tablet.jpg");
-    // height: 609px;
-    // width: 709px;
+    height: 609px;
+    width: 709px;
+    top: 287px;
   }
 }
 
