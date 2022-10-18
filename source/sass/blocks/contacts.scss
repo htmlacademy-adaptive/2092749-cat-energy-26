@@ -2,6 +2,8 @@
   @include tablet {
     padding-top: 71px;
     padding-bottom: 65px;
+    position: relative;
+
   }
 }
 
@@ -12,7 +14,7 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  position: relative;
+  // position: relative;
   margin-bottom: 35px;
 
   @include tablet {
@@ -60,6 +62,7 @@
 .contacts__e-mail {
   display: inline-block;
   width: 219px;
+
 }
 
 .contacts__input--e-mail {
@@ -67,9 +70,51 @@
   margin-bottom: 14px;
   margin-left: 4px;
 
-  @include tablet{
+  // background-image: url(../img/icons/icon-phone.svg);
+  // background-repeat: no-repeat;
+  @include tablet {
     width: 551px;
     margin-left: 10px;
+  }
+
+  @include desktop {
+    width: 486px;
+    margin-left: 14px;
+    margin-right: 60px;
+  }
+}
+
+.contacts__label--e-mail::before {
+  position: absolute;
+  background-image: url(../img/icons/icon-e-mail.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 23px;
+  height: 18px;
+  right: 27px;
+  bottom: -450px;
+  @include tablet{
+    right: 20px;
+  bottom: 171px;
+  }
+  @include desktop{
+    bottom: 106px;
+    left: 528px;
+  }
+}
+
+.contacts__label--phone::before {
+  position: absolute;
+  background-image: url(../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 23px;
+  height: 24px;
+  right: 26px;
+  bottom: -514px;
+  @include tablet{
+    right: 19px;
+    bottom: 102px;
   }
 }
 
@@ -78,8 +123,12 @@
   margin-bottom: 24px;
   margin-left: 1px;
 
-  @include tablet{
+  @include tablet {
     width: 535px;
     margin-left: 3px;
+  }
+
+  @include desktop {
+    width: 472px;
   }
 }

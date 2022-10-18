@@ -33,6 +33,14 @@
   }
 }
 
+.radio-button__label:hover {
+  color: #222222;
+}
+
+.radio-button__label:disabled {
+  opacity: 0.3;
+}
+
 .radio-button__control-mark {
   position: absolute;
   left: -11px;
@@ -66,4 +74,17 @@
     top: 10px;
     left: 10px;
   }
+}
+
+.radio-button__control-mark:hover{
+  border: 1px solid #BABABA;
+}
+
+.radio-button__control-mark:disabled{
+  border: 1px solid #BABABA;
+  opacity: 0.3;
+}
+
+.radio-button__radio[type=radio]:checked + .radio-button__control-mark:disabled:before{
+  opacity: 0.3;
 }

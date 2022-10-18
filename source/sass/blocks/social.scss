@@ -20,6 +20,9 @@
   fill: #68B738;
 }
 
+.social__icon:active{
+  opacity: 0.3;
+}
 .social__container{
   @include tablet{
     display: flex;

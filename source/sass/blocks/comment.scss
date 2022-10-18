@@ -27,4 +27,10 @@
     width: 631px;
     height: 174px;
   }
+
+  @include desktop{
+    width: 1220px;
+    height: 174px;
+    margin-bottom: 67px;
+  }
 }

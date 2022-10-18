@@ -62,22 +62,34 @@
     position: relative;
     display: flex;
   }
+
+  @include desktop {
+    max-width: 250px;
+  }
 }
 
 .discription__wrapper {
-  @include tablet{
-  display: flex;
-  flex-wrap: wrap;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop{
+    justify-content: space-between;
+  }
 }
+
+.discription__box:nth-child(2n+1) {
+  @include tablet {
+    margin-right: 153px;
+  }
+  @include desktop{
+    margin: 0;
+  }
 }
-.discription__box:nth-child(2n+1){
-  @include tablet{
-  margin-right: 153px;
-}
-}
-.discription{
-  @include tablet{
+
+.discription {
+  @include tablet {
     padding-bottom: 47px;
     border-bottom: 1px solid #E6E6E6;
-}
+  }
 }

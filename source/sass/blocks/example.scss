@@ -24,6 +24,10 @@
     line-height: 60px;
     margin-bottom: 63px;
   }
+
+  @include desktop{
+    margin-bottom: 76px;
+  }
 }
 
 .example__discription {
@@ -41,11 +45,19 @@
     color: #444444;
     margin-bottom: 54px;
   }
+
+  @include desktop{
+    margin-bottom: 69px;
+  }
 }
 
 .example__div {
   display: flex;
   margin-bottom: 20px;
+
+  @include desktop{
+    margin-bottom: 60px;
+  }
 }
 
 .example__total {
@@ -77,5 +89,14 @@
 .example__wrapper{
   @include tablet{
     display: flex;
+  }
+  @include desktop{
+    display: initial;
+  }
+}
+
+.example__container{
+  @include desktop{
+  padding: 70px 742px 75px 0;
   }
 }

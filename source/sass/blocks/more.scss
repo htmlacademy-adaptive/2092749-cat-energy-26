@@ -1,9 +1,22 @@
+.more {
+  margin-bottom: 69px;
+  @include desktop{
+    // display: flex;
+  }
+}
+
 .more__title {
   margin: 0;
   font-family: "oswaldregular", Arial, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 36px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
 }
 
 .more__product {
@@ -15,6 +28,19 @@
   color: #222222;
   margin: 0;
   margin-bottom: 13px;
+  grid-column: 1/2;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 20px;
+    // margin-right: 244px;
+    margin-bottom: 25px;
+  }
+
+  @include desktop {
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .more__price {
@@ -23,6 +49,17 @@
   line-height: 14px;
   color: #444444;
   margin: 0;
+  grid-column: 2/3;
+  text-align: end;
+
+  @include tablet {
+    grid-column: 3/4;
+  }
+
+  @include desktop{
+    align-self: center;
+    text-align: start;
+  }
 }
 
 .more__weight {
@@ -31,20 +68,88 @@
   line-height: 14px;
   color: #444444;
   margin: 0;
+  grid-column: 1/2;
+
+  @include tablet {
+    grid-column: 2/3;
+
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+    }
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
-.more__div{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
+// .more__div {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 15px;
 
-.more__card{
+//   @include tablet {
+//     display: initial;
+//   }
+// }
+
+.more__card {
+  display: grid;
+  // grid-template-rows: ;
+  grid-template-columns: 130px 149px;
+  row-gap: 14px;
+  width: 280px;
   padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid #CDCDCD;
+
+  @include tablet {
+    width: 708px;
+    grid-template-columns: auto auto auto;
+    border: none;
+    // display: flex;
+    // flex-wrap: wrap;
+    padding: 26px 38px 28px 38px;
+    border: 1px solid #CDCDCD;
+    border-top: none;
+  }
+
+  @include desktop {
+    // padding: 15px 0 21px 0;
+    border: none;
+    grid-template-columns: 258px 152px 78px auto;
+    grid-template-rows: auto;
+    width: 896px;
+    padding: 25px 0 17px 0;
+
+  }
 }
 
-.more__card:last-child{
+.more__card:last-child {
   border-bottom: 1px solid #CDCDCD;
+
+  @include tablet {
+    // border-top: none;
+  }
+}
+
+.more__button {
+  grid-column: 1/-1;
+
+  @include tablet {
+    width: 632px;
+    font-size: 16px;
+  }
+
+  @include desktop {
+    width: 244px;
+    grid-column: 4/5;
+  }
+}
+
+
+.more__continer{
+  @include desktop{
+    display: flex;
+  }
 }

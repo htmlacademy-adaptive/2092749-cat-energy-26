@@ -2,6 +2,11 @@
   @include tablet {
     padding: 65px 66px 72px 70px;
   }
+
+  @include desktop{
+    padding: 73px 110px 0 110px;
+
+  }
 }
 
 .main-form__title {

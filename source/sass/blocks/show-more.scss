@@ -1,6 +1,10 @@
 .show-more {
   padding-top: 36px;
   padding-bottom: 25px;
+
+  @include desktop{
+    padding-top: 0;
+  }
 }
 
 .show-more__title {
@@ -14,15 +18,97 @@
   margin: 0;
   margin-bottom: 8px;
   text-align: center;
+
+  @include tablet {
+    margin-bottom: 23px;
+  }
+
+  @include desktop {
+    padding-left: 56px;
+    padding-right: 55px;
+    margin-bottom: 23px;
+  }
 }
 
 .show-more__text {
   @include font;
   text-align: center;
   margin-bottom: 21px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 79px;
+    padding-right: 78px;
+    margin-bottom: 87px;
+  }
+
+  @include desktop{
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-bottom: 80px;
+  }
 }
 
 .show-more__button {
   background-color: #F2F2F2;
+  color: #444444;
+
+  @include tablet {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    padding: 30px 30px 30px 30px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 49px;
+    padding-top: 52px;
+  }
+}
+
+.show-more__button::before {
+  @include tablet {
+    position: absolute;
+    border: 1px solid #D3D3D3;
+    transform: rotate(-180deg);
+    content: "";
+    width: 60px;
+    left: 0;
+  }
+}
+
+.show-more__button::after {
+  @include tablet {
+    position: absolute;
+    border: 1px solid #D3D3D3;
+    transform: rotate(-90deg);
+    content: "";
+    width: 60px;
+    left: 0;
+  }
+}
+
+.show-more__button--oll {
+
+  @include tablet {
+    margin: 0 auto;
+    display: block;
+    background-color: #F2F2F2;
+    color: #444444;
+  }
+
+  @include desktop{
+    width: 168px;
+  }
+}
+
+.show-more__button--oll:hover{
+  background-color:  #EBEBEB;
+  color: #000000;
+}
+
+.show-more__button--oll:active{
+  background-color:  #EBEBEB;
   color: #444444;
 }

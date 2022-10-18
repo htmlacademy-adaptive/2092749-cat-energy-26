@@ -6,11 +6,15 @@
   }
 
   @include desktop {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 }
 
 .page__body{
   margin: 0;
+@include desktop{
+  // padding-left: 110px;
+  // padding-right: 110px;
+}
 }

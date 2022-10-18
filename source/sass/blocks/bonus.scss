@@ -5,6 +5,18 @@
   height: 289px;
   position: relative;
   background-color: rgba(104, 183, 56, 0.85);
+
+  @include tablet {
+    background-image: url(../img/background-cat-tablet.jpg);
+    width: 707px;
+    height: 200px;
+  }
+
+  @include desktop{
+    background-image: url(../img/background-cat-desktop.jpg);
+    width: 245px;
+    height: 288px;
+  }
 }
 
 .bonus::before {
@@ -26,7 +38,13 @@
   text-align: center;
   z-index: 2;
   position: relative;
-  padding-top: 187px;
+  padding: 187px 61px 0 58px;
   margin: 0;
   margin-top: 32px;
+
+  @include tablet{
+    padding: 71px 124px 69px 422px;
+    text-align: inherit;
+    margin: 0;
+  }
 }

@@ -1,19 +1,26 @@
-.header{
+.header {
 
-  @include tablet{
+  @include tablet {
     display: flex;
   }
-
-  &__logo{
-display: block;
-text-align: center;
-@include tablet{
-  padding-right: 94px;
-}
-}
 }
 
-.header__toggle{
+.header__logo {
+  display: block;
+  text-align: center;
+
+  @include tablet {
+    padding-right: 94px;
+  }
+
+  @include desktop{
+    padding-left: 110px;
+    padding-right: 536px;
+  }
+}
+
+
+.header__toggle {
 
   @include tablet {
     display: none;

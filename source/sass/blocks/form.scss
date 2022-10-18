@@ -28,6 +28,11 @@
   @include tablet {
     font-size: 20px;
     line-height: 30px;
+    padding: 10px 15px 11px 15px;
+  }
+
+  @include desktop {
+    padding: 10px 15px 8px 19px;
   }
 }
 
@@ -39,7 +44,10 @@
   @include tablet {
     width: 567px;
     margin-left: 10px;
+  }
 
+  @include desktop {
+    width: 506px;
   }
 }
 
@@ -51,7 +59,10 @@
   @include tablet {
     width: 536px;
     margin-left: 10px;
+  }
 
+  @include desktop {
+    width: 475px;
   }
 }
 
@@ -64,17 +75,70 @@
     width: 497px;
     margin-left: 4px;
   }
+
+  @include desktop {
+    width: 436px;
+  }
 }
 
 .form__required {
   display: block;
   text-align: center;
   margin-bottom: 32px;
-}
+  font-size: 14px;
+  line-height: 16px;
 
-.form__wrapper{
-  @include tablet{
-    padding-bottom: 72px;
+  @include tablet {
+    display: initial;
+    margin-left: 61px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
+.form__wrapper {
+  @include tablet {
+    padding-bottom: 72px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    width: 588px;
+    margin-right: 80px;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
+}
+
+.form__container {
+  @include desktop {
+    display: flex;
+  }
+}
+
+.form__button {
+  @include tablet {
+    width: 282px;
+  }
+
+  @include desktop {
+    width: 568px;
+  }
+}
+
+.form__input--states:hover {
+  border: 1px solid #CDCDCD;
+}
+
+.form__input--states:focus {
+  border: 2px solid #444444;
+  padding: 9px 14px 10px 14px;
+}
+
+.form__input--states:error :invalid{
+  border: 2px solid #FF8282;
+  padding: 9px 14px 10px 14px;
+}

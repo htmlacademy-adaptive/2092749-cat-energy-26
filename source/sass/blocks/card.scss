@@ -1,20 +1,52 @@
-.card{
-margin-bottom: 15px;
+.card {
+  margin-bottom: 15px;
+
+  @include tablet {
+    width: 324px;
+    border: 2px solid #F2F2F2;
+    padding-bottom: 39px;
+  }
+
+  @include desktop{
+    width: 245px;
+    // margin-right: 80px;
+    border: none;
+    gap: 80px;
+    padding: 243px 39px 40px 38px;
+  }
 }
 
-.card::before{
+.card::nth-child(4n){
+  @include desktop{
+margin-right: 0;
+  }
+}
+
+.card::before {
   content: "";
   position: absolute;
   border: 1px solid #EBEBEB;
   width: 320px;
   right: 0;
+
+  @include tablet {
+    display: none;
+  }
 }
 
-.card__wraper{
+.card__wraper {
   display: flex;
   margin-bottom: 22px;
   padding-top: 21px;
+
+  @include tablet {
+    display: initial;
+  }
+  @include desktop{
+    width: 180px;
+  }
 }
+
 .card__title {
   font-family: "oswaldregular", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -24,49 +56,140 @@ margin-bottom: 15px;
   color: #222222;
   margin: 0;
   grid-column: 1/2;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 24px;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    text-align: center;
+    padding: 0 50px 21px 42px;
+  }
+
+  @include desktop{
+    padding: 0 42px 21px 36px;
+  }
 }
 
-.card__container{
+.card__container {
   display: grid;
   grid-template-columns: 76px 66px;
+
+  @include tablet {
+    grid-template-columns: 123px 123px;
+    padding: 34px 36px 33px;
+    row-gap: 7px;
+  }
+
+  @include desktop{
+    grid-template-columns: 94px 73px;
+    padding: 0;
+  }
 }
 
 .card__mass {
   @include font;
   grid-column: 1/2;
   grid-row: 2/3;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #CDCDCD;
+    width: 250px;
+    padding-bottom: 6px;
+  }
+
+  @include desktop{
+    width: 169px;
+  }
 }
+
+
+
 
 .card__weight {
   @include font;
   grid-column: 2/3;
   grid-row: 2/3;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: end
+  }
 }
+
 
 .card__taste {
   @include font;
   grid-column: 1/2;
   grid-row: 3/4;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #CDCDCD;
+    width: 250px;
+    padding-bottom: 6px;
+  }
+  @include desktop{
+    width: 169px;
+  }
 }
 
 .card__name {
   @include font;
   grid-column: 2/3;
   grid-row: 3/4;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: end;
+  }
 }
 
-.card__price{
+.card__price {
   @include font;
   grid-column: 1/2;
   grid-row: 4/5;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+    border-bottom: 1px solid #CDCDCD;
+    width: 250px;
+    padding-bottom: 6px;
+  }
+  @include desktop{
+    width: 169px;
+  }
 }
 
-.card__sum{
+.card__sum {
   @include font;
   grid-column: 2/3;
   grid-row: 4/5;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: end;
+  }
 }
 
-// .card__button{
-//   margin-bottom: 14px;
-// }
+
+.card__button {
+  @include tablet {
+    width: 248px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto;
+    display: block;
+  }
+  @include desktop{
+    width: 168px;
+    margin: 0;margin-top: 33px;
+  }
+}

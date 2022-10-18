@@ -1,10 +1,5 @@
 .location {
   background-color: #F2F2F2;
-
-  @include tablet{
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
 
 .location__container {
@@ -35,4 +30,5 @@
   @include tablet{
     background-color: #FFFFFF;
   }
+
 }
