@@ -9,13 +9,13 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__header">
+  <header class="header page__header nav__list--opened">
     <a class="header__logo" href="./index.html">
       <img class="header__logo-pic" src="./img/logo-desktop.svg" width="#" height="#" alt="Логотип Кэт энерджи">
     </a>
-    <button class="header__toggle toggle header__toggle--active" type="button" aria-label="открыть меню"></button>
-    <nav class="nav">
-      <ul class="nav__list">
+    <nav class="nav nav--closed nav--nojs">
+      <button class="nav__toggle  toggle nav__toggle--active" type="button" aria-label="открыть меню"></button>
+      <ul class="nav__list nav__item--active">
         <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
         <li class="nav__item"><a class="nav__link" href="./catalog.html">Каталог продукции</a></li>
         <li class="nav__item"><a class="nav__link" href="./form.html">Подбор программы</a></li>
@@ -31,7 +31,7 @@
       <button class="main__button button" type="button" aria-label="Подобрать программу"><span
           class="button__text">Подобрать программу</span></button>
       <div class="advantages">
-        <div class="advantages__wrapper">
+        <div class="advantages__wrapper advantages__wrapper--weight-loss">
           <h3 class="advantages__title">Похудение</h3>
           <p class="advantages__discription">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -177,6 +177,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/nav.js" defer></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 .presentation {
-  background-image: url("../img/index-background-desktop.jpg");
+  background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   height: 302px;
   position: relative;
@@ -10,6 +10,11 @@
     padding-left: 117px;
     padding-right: 196px;
   }
+
+  @include desktop {
+    background-color: #FFFFFF;
+  }
+
 }
 
 .presentation::before {
@@ -24,6 +29,15 @@
 
   @include tablet {
     background-color: #FFFFFF;
+  }
+
+  @include desktop {
+    background-color: rgba(104, 183, 56, 0.85);
+    width: 720px;
+    height: 694px;
+    left: 765px;
+    right: 0;
+    top: -71px;
   }
 }
 
@@ -51,6 +65,11 @@
     margin-bottom: 41px;
     text-align: initial;
   }
+
+  @include desktop {
+    padding-left: 80px;
+    padding-right: 436px;
+  }
 }
 
 .presentation__subtitle {
@@ -76,11 +95,15 @@
     color: #000000;
     text-align: initial;
   }
+
+  @include desktop{
+    margin-bottom: 52px;
+    padding-left: 80px;
+  }
 }
 
 .presentation::after {
   position: absolute;
-  background-image: url("../img/index-can.png");
   content: "";
   height: 270px;
   width: 280px;
@@ -88,11 +111,37 @@
   top: 160px;
   z-index: 2;
 
-  @include tablet{
-    background-image: url("../img/index-can-tablet.jpg");
+  @include tablet {
+    // background-image: url("../img/index-can-tablet.jpg");
     height: 609px;
     width: 709px;
     top: 287px;
   }
+
+  @include desktop {
+    background-image: url("../img/index-background-desktop.jpg");
+    width: 720px;
+    height: 694px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    top: -72px;
+    left: 765px;
+    z-index: 0;
+  }
 }
 
+.presentation__title::before{
+  @include desktop{
+    position: absolute;
+    background-image: url("../img/index-can-desktop.png");
+    content: "";
+    height: 499px;
+    width: 552px;
+    left: 20px;
+    top: 160px;
+    left: 363px;
+    top: 203px;
+  }
+}

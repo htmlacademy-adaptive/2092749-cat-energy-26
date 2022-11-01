@@ -53,6 +53,7 @@
 
 .example__div {
   display: flex;
+  gap: 32px;
   margin-bottom: 20px;
 
   @include desktop{
@@ -81,10 +82,10 @@
  }
 }
 
-.example__box:nth-child(1) {
-  padding-right: 57px;
-  padding-left: 22px;
-}
+// .example__box:nth-child(1) {
+//   padding-right: 57px;
+//   padding-left: 22px;
+// }
 
 .example__wrapper{
   @include tablet{

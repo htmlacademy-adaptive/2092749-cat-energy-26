@@ -1,29 +1,26 @@
 .header {
+  position: relative;
 
   @include tablet {
     display: flex;
+  }
+  @include desktop{
+    z-index: 4;
   }
 }
 
 .header__logo {
   display: block;
-  text-align: center;
+  // text-align: center;
 
   @include tablet {
     padding-right: 94px;
   }
 
-  @include desktop{
+  @include desktop {
     padding-left: 110px;
     padding-right: 536px;
   }
 }
 
 
-.header__toggle {
-
-  @include tablet {
-    display: none;
-  }
-
-}
