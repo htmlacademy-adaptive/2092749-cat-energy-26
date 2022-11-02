@@ -1,0 +1,134 @@
+.contacts {
+  @include tablet {
+    padding-top: 71px;
+    padding-bottom: 65px;
+    position: relative;
+
+  }
+}
+
+.contacts__text {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  // position: relative;
+  margin-bottom: 35px;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+}
+
+.contacts__text::before {
+  position: absolute;
+  border: 1px solid #68B738;
+  content: "";
+  width: 99px;
+  right: -27px;
+  top: 15px;
+}
+
+.contacts__label {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__input {
+  border: 1px solid #CDCDCD;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.contacts__e-mail {
+  display: inline-block;
+  width: 219px;
+
+}
+
+.contacts__input--e-mail {
+  width: 219px;
+  margin-bottom: 14px;
+  margin-left: 4px;
+
+  // background-image: url(../img/icons/icon-phone.svg);
+  // background-repeat: no-repeat;
+  @include tablet {
+    width: 551px;
+    margin-left: 10px;
+  }
+
+  @include desktop {
+    width: 486px;
+    margin-left: 14px;
+    margin-right: 60px;
+  }
+}
+
+.contacts__label--e-mail::before {
+  position: absolute;
+  background-image: url(../img/icons/icon-e-mail.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 23px;
+  height: 18px;
+  right: 27px;
+  bottom: -450px;
+  @include tablet{
+    right: 20px;
+  bottom: 171px;
+  }
+  @include desktop{
+    bottom: 106px;
+    left: 528px;
+  }
+}
+
+.contacts__label--phone::before {
+  position: absolute;
+  background-image: url(../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  content: "";
+  width: 23px;
+  height: 24px;
+  right: 26px;
+  bottom: -514px;
+  @include tablet{
+    right: 19px;
+    bottom: 102px;
+  }
+}
+
+.contacts__input--phone {
+  width: 204px;
+  margin-bottom: 24px;
+  margin-left: 1px;
+
+  @include tablet {
+    width: 535px;
+    margin-left: 3px;
+  }
+
+  @include desktop {
+    width: 472px;
+  }
+}

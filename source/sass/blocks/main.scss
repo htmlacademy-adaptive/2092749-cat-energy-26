@@ -1,0 +1,33 @@
+.main__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 138px;
+
+  @include tablet {
+    margin: 0;
+    margin-left: 91px;
+    margin-bottom: 596px;
+    z-index: 2;
+    position: relative;
+  }
+  @include desktop{
+    margin-bottom: 380px;
+  }
+}
+
+.main__catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  @include desktop {
+    padding-left: 110px;
+    padding-right: 110px;
+   }
+
+}

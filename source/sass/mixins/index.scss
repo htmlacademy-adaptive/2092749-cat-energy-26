@@ -1,0 +1,22 @@
+@mixin tablet {
+  @media screen and (min-width: $width-tablet) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media screen and (min-width: $width-desktop) {
+    @content;
+  }
+}
+
+@mixin font {
+  font-family: 'Arial';
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+
+

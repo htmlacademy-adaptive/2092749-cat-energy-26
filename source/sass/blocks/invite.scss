@@ -1,0 +1,46 @@
+.invite {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px 26px 20px;
+
+  @include tablet{
+    padding: 56px 70px 55px 70px;
+    gap: 335px;
+  }
+  @include desktop{
+    position: absolute;
+    width: 565px;
+    margin: 0;
+    gap: 0;
+    padding: 56px 80px;
+  }
+}
+
+.invite__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #111111;
+
+  }
+}
+
+.invite__address {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+  text-transform: capitalize;
+}

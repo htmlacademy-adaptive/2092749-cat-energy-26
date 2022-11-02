@@ -1,0 +1,103 @@
+.example {
+  background-color: #EAEAEA;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    margin-top: 43px;
+    background-color: #FFFFFF;
+  }
+}
+
+.example__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @include desktop{
+    margin-bottom: 76px;
+  }
+}
+
+.example__discription {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    margin-bottom: 54px;
+  }
+
+  @include desktop{
+    margin-bottom: 69px;
+  }
+}
+
+.example__div {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+
+  @include desktop{
+    margin-bottom: 60px;
+  }
+}
+
+.example__total {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.example__box{
+  @include tablet{
+    margin-right: 42px;
+  }
+}
+
+.example__box--days{
+ @include tablet{
+  margin-right: 167px;
+ }
+}
+
+// .example__box:nth-child(1) {
+//   padding-right: 57px;
+//   padding-left: 22px;
+// }
+
+.example__wrapper{
+  @include tablet{
+    display: flex;
+  }
+  @include desktop{
+    display: initial;
+  }
+}
+
+.example__container{
+  @include desktop{
+  padding: 70px 742px 75px 0;
+  }
+}

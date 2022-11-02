@@ -1,0 +1,43 @@
+.main-form {
+  @include tablet {
+    padding: 65px 66px 72px 70px;
+  }
+
+  @include desktop{
+    padding: 73px 110px 0 110px;
+
+  }
+}
+
+.main-form__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
+}
+
+.main-form__text {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+}

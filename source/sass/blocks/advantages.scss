@@ -1,0 +1,128 @@
+.advantages {
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-bottom: 71px;
+  }
+}
+
+.advantages__wrapper {
+  background-color: #F2F2F2;
+  padding: 20px;
+
+  @include tablet {
+    margin-bottom: 30px;
+    padding-top: 77px;
+    padding-left: 53px;
+  }
+
+  @include desktop {
+    width: 570px;
+    padding: 77px 51px 55px 52px;
+  }
+}
+
+.advantages__title {
+  font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 69px;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  @include desktop {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
+}
+
+.advantages__discription {
+  font-family: 'Arial', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+
+  @include tablet {
+    padding-right: 308px;
+    margin-bottom: 48px;
+  }
+
+  @include desktop {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 23px;
+  }
+}
+
+.advantages__catalog {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  padding-right: 23px;
+
+
+  @include tablet {
+    font-family: "oswaldregular", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.advantages__catalog:hover {
+  color: #000000;
+}
+
+.advantages__catalog:active {
+  opacity: 0.3;
+}
+
+.advantages__arrow {
+  position: absolute;
+  bottom: 2px;
+  right: -28px;
+
+  @include tablet {
+    bottom: 10px;
+  }
+}
+
+.advantages__arrow:hover {
+  color: #000000;
+}
+
+.advantages__arrow:active {
+  opacity: 0.3;
+}
+
+// .advantages__wrapper--weight-loss::before{
+//   content: "";
+//   background-image: url("../img/icons/icon-cat-back.svg");
+//   left: 0;
+//   top: 0;
+//   width: 50px;
+//   height: 53px;
+//   position: absolute;
+//   background-repeat: no-repeat;
+
+// }
