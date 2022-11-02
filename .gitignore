@@ -5,6 +5,7 @@
 *.log
 *.pdf
 *.psd
+*.build
 *.sublime*
 node_modules/
 npm-debug.*
