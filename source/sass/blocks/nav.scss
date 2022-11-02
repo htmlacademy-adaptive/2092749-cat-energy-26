@@ -98,6 +98,10 @@
   z-index: 5;
 }
 
+.nav__list {
+  display: none;
+}
+
 .nav__list--opened .nav__list {
   display: block;
   z-index: 3;
